@@ -5,8 +5,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
+    padding: 20px;
 }
 
 #container {
@@ -14,64 +15,39 @@ body {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    width: 350px;
+    width: 100%;
     text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
 }
 
 /* Estilização de Inputs e Botões */
 input {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+    box-sizing: border-box; /* Garante que o padding não quebre o layout */
+    outline: none;
 }
 
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-/* Painel de Conta */
-.saldo-box {
-    background: #e9ecef;
-    padding: 15px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#saldo-valor {
-    font-size: 1.2rem;
-    color: #28a745;
-}
-
-.operacoes {
-    text-align: left;
-    border-top: 1px solid #eee;
-    padding-top: 15px;
-}
-
-.operacoes h3 {
-    font-size: 1rem;
-    margin-bottom: 5px;
-}
-
-#btn-sair {
-    background-color: #dc3545;
-    margin-top: 20px;
-}
-
-#btn-sair:hover {
-    background-color: #a71d2a;
 }
