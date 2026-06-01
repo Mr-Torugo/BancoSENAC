@@ -1,13 +1,21 @@
 /* Configuração Global e Background */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-    background-color: #f0f4f8; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #002347, #0056b3, #007bff, #001a33);
+    background-size: 400% 400%;
+    animation: gradientAnimado 15s ease infinite;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
     padding: 20px;
+}
+
+@keyframes gradientAnimado {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* Container do Formulário */
